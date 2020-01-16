@@ -1,4 +1,6 @@
 # Exercise 2: using built-in string functions
+# Week 2
+# Michelle Tan
 
 # Create a variable `lyric` that contains the text "I like to eat apples and 
 # bananas"
