@@ -12,7 +12,7 @@ intro <- substr(lyric,1,13)
 # Use the `substr()` function to extract the 15th through the last letter of the 
 # `lyric`, and store the result in a variable called `fruits`
 # Hint: use `nchar()` to determine how many total letters there are!
-fruits <- substr(lyric,15,32)
+fruits <- substr(lyric,15,nchar(lyric))
 
 # Use the `gsub()` function to substitute all the "a"s in `fruits` with "ee".
 # Store the result in a variable called `fruits_e`
