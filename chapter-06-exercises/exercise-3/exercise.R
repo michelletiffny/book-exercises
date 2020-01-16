@@ -1,4 +1,6 @@
 # Exercise 3: writing and executing functions
+# week 2 tuesday
+# Michelle Tan
 
 # Define a function `add_three` that takes a single argument and
 # returns a value 3 greater than the input
