@@ -8,7 +8,7 @@ my_lunch <- c("rice","salmon","chicken nuggets","chicken soup")
 
 # Create a list `meals` that has contains your breakfast and lunch
 meals <- list(
-  breaksfast = my_breakfast, 
+  breakfast = my_breakfast, 
   lunch = my_lunch)
 
 # Add a "dinner" element to your `meals` list that has what you plan to eat 
