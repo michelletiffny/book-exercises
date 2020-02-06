@@ -5,14 +5,19 @@
 #install.packages("nycflights13")  # should be done already
 library("nycflights13")
 library("dplyr")
-
+View(flights)
 # What was the average departure delay in each month?
 # Save this as a data frame `dep_delay_by_month`
 # Hint: you'll have to perform a grouping operation then summarizing your data
 
 
 # Which month had the greatest average departure delay?
-
+flights %>% 
+  group_by(month) %>% 
+  summarize(
+    avg_dep_delay = mean(dep_delay, na.rm = TRUE)
+  ) %>% 
+  filter(avg_dep_delay == max(avg_dep_delay))
 
 # If your above data frame contains just two columns (e.g., "month", and "delay"
 # in that order), you can create a scatterplot by passing that data frame to the
