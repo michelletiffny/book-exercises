@@ -1,9 +1,11 @@
 # Load libraries so they are available
 library("shiny")
 library("ggplot2")
+library("dplyr")
 
 # Read data file
-income_growth <- read.csv("data/income_growth_1980-2014.csv")
+income_growth <- read.csv("data/income_growth_1980-2014.csv", encoding = "UTF-8") %>% 
+  rename("Income.Percentile" = X.U.FEFF.Income.Percentile)
 
 # Define a server function
 server <- function(input, output) {
